@@ -94,7 +94,6 @@ function App() {
 
       // again find final selection
       const selection_ = findSelection(newState);
-      console.log("selection", selection_);
       setSelected(selection_);
 
       return newState;
@@ -131,7 +130,6 @@ function App() {
    * @param {array} path Path to the category from root node
    */
   const clearCategory = (category, path) => {
-    console.log(path);
     setSelected((state) => state.filter((sel) => sel[0].id !== category.id));
 
     setTree((state) => {
@@ -168,13 +166,12 @@ function App() {
                 (Clear All)
               </small>
             </div>
-            <div>
+            <div data-testid="selection">
               {selected.map(([category, path]) => {
-                console.log("catg", category);
                 return (
                   <span key={category.id} className={styles.selected}>
                     {category.name}
-                    <button onClick={() => clearCategory(category, path)}>
+                    <button data-testid={`clear-${category.id}`} onClick={() => clearCategory(category, path)}>
                       X
                     </button>
                   </span>

@@ -17,6 +17,7 @@ function Branch({ child, onCheckToggle, path }) {
       <div>
         <input
           type="checkbox"
+          data-testid={`chk-box-${child.node.id}`}
           checked={child.isChecked}
           onChange={(e) => {
             onCheckToggle(e.target.checked, path);

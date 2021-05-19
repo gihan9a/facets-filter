@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
+    "test:watch": "react-scripts test",
     "test:cover": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject"
   },
@@ -35,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^6.0.0"
   }
 }
