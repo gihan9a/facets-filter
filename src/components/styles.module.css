@@ -1,0 +1,17 @@
+.tree {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.tree:first-child{
+  padding-left: 0;
+}
+
+.tree li {
+  line-height: 1.75;
+  white-space: nowrap;
+}
+
+.tree li input[type="checkbox"] {
+  margin-right: 0.5rem;
+}

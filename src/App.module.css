@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem;
+}
+
+.sidebar {
+  background: #eee;
+  padding: 2rem;
+}
+
+.selected {
+  background-color: #eee;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+.selected:first-child {
+  margin-left: 0;
+}
+
+.selected button {
+  background-color: none;
+  border: none;
+}
+
+.content {
+  margin-left: 1rem;
+}
