@@ -24,10 +24,8 @@ This will start a local web server at http://localhost:3000 and open up your def
 
 ### Tests
 
-Following npm commands will run tests in watch mode.
-
 `npm run test` - Run the test suits.  
-`npm run test:coverage` - Run the coverage report.  
+`npm run test:cover` - Run the test suits and generate coverage report.  
 
 
 
